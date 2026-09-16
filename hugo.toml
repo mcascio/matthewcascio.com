@@ -1,0 +1,85 @@
+baseURL = "https://matthewcascio.com/"
+theme = "LoveIt"
+title = "Matthew Cascio"
+languageCode = "en"
+languageName = "English"
+enableRobotsTXT = true
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  # dark mode by default
+  defaultTheme = "dark"
+  title = "Matthew Cascio"
+  description = "Matthew Cascio — platform delivery executive"
+  dateFormat = "2006-01-02"
+
+  [params.author]
+    name = "Matthew Cascio"
+    email = ""
+    link = ""
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+    [params.header.title]
+      name = "Matthew Cascio"
+      typeit = false
+
+  [params.footer]
+    enable = true
+    hugo = false
+    copyright = true
+    author = true
+    since = 2024
+
+  [params.home]
+    rss = 0
+    [params.home.profile]
+      enable = true
+      # Replace with your headshot — place the file at static/images/avatar.jpg
+      avatarURL = "/images/MatthewCascio-avatar.png"
+      title = "<h1>Matthew Cascio</h1>"
+      # Update this bio to reflect your background
+      subtitle = "<h2>Product and platform delivery leader for the world's most recognized brands</h2>American Red Cross, Volkswagen/Audi of USA, Graduate Management Admissions Council, MEDA Pharmaceuticals and Rosetta Stone.<br>Adobe Experience Cloud, ServiceNow, New Relic, Datadog, Agentic AI, GenAI, Observability, Hyperscale. AWS, GCP, Azure. <p>Someone once said to me \"<i>A true software architect is someone who's seen a lot of shit.</i>\" Yep, that's me."
+      typeit = false
+      social = true
+      # Resume button rendered below the bio
+      disclaimer = '<a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">View Resume</a>'
+    [params.home.posts]
+      enable = false
+
+  # Social links — fill in your usernames/handles
+  [params.social]
+    GitHub = "mcascio"
+    Linkedin = "mcascio"
+    X = "mattcascio"
+    Email = "hello@matthewcascio.com"
+
+  [params.search]
+    enable = false
+
+  [params.page]
+    linkToMarkdown = false
+    [params.page.share]
+      enable = false
+
+  [params.cookieconsent]
+    enable = false
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
